@@ -12,7 +12,7 @@ class Student(models.Model):
     address = models.TextField()
 
     def __str__(self):
-        return self.student_name
+        return str(self.student_name) + " | " + str(self.address)
 
 
 class Faculty(models.Model):
